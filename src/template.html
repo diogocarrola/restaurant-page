@@ -8,10 +8,10 @@
 </head>
 <body>
   <header>
-    <nav>
-      <button id="home-btn">Home</button>
-      <button id="menu-btn">Menu</button>
-      <button id="contact-btn">Contact</button>
+    <nav role="tablist" aria-label="Main Navigation">
+      <button id="home-btn" role="tab" aria-selected="true" tabindex="0">Home</button>
+      <button id="menu-btn" role="tab" aria-selected="false" tabindex="-1">Menu</button>
+      <button id="contact-btn" role="tab" aria-selected="false" tabindex="-1">Contact</button>
     </nav>
   </header>
   <div id="content"></div>
