@@ -33,6 +33,11 @@ nav button:hover {
   background: #e0c097;
 }
 
+nav button.active {
+  background: #8d5524;
+  color: #fff;
+}
+
 #content {
   max-width: 600px;
   margin: 2rem auto;
