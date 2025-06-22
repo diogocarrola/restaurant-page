@@ -60,6 +60,7 @@ nav button:focus {
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.07);
   text-align: center;
+  animation: fadeInUp 0.7s cubic-bezier(.23,1.01,.32,1) both;
 }
 
 h1 {
@@ -98,6 +99,13 @@ li {
   box-shadow: 0 1px 4px rgba(141,85,36,0.06);
   font-size: 1.1rem;
   text-align: left;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: scale(1.03) translateY(-2px);
+  box-shadow: 0 4px 16px rgba(141,85,36,0.13);
+  background: #f3e3c3;
 }
 
 /* Contact Form */
@@ -131,6 +139,45 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background: #a4713a;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  color: #8d5524;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  font-size: 1rem;
+  border-top: 1px solid #f3e3c3;
+  margin-top: 3rem;
+}
+
+footer .socials {
+  margin: 0.5rem 0;
+}
+
+footer .socials a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #8d5524;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+footer .socials a:hover {
+  color: #a4713a;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Responsive Design */
