@@ -5,18 +5,18 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
-  background: linear-gradient(135deg, #f8fafc 0%, #f1e3d3 100%);
+  font-family: 'Press Start 2P', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #23272a url('https://www.transparenttextures.com/patterns/square-bg.png');
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  color: #222;
+  color: #fff;
 }
 
-/* Header and Navigation */
 header {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  background: #222;
+  border-bottom: 8px solid #ff9800;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   padding: 0;
   position: sticky;
   top: 0;
@@ -32,59 +32,66 @@ nav {
 }
 
 nav button {
-  background: none;
-  border: none;
-  color: #8d5524;
+  background: #ff9800;
+  border: 4px solid #222;
+  color: #222;
   font-size: 1.1rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
   font-weight: 600;
-  padding: 0.5rem 1.5rem;
-  border-radius: 24px;
+  padding: 0.7rem 2rem;
+  border-radius: 0;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: background 0.2s, color 0.2s, border 0.2s;
   outline: none;
+  box-shadow: 2px 2px 0 #fff, 4px 4px 0 #ff9800;
 }
 
 nav button.active,
 nav button:focus {
-  background: #8d5524;
-  color: #fff;
-  box-shadow: 0 2px 8px rgba(141,85,36,0.15);
+  background: #222;
+  color: #ff9800;
+  border: 4px solid #ff9800;
 }
 
-/* Main Content */
 #content {
   max-width: 700px;
   margin: 3rem auto;
-  background: #fff;
+  background: #333;
   padding: 2.5rem 2rem;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  border-radius: 0;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.25);
   text-align: center;
   animation: fadeInUp 0.7s cubic-bezier(.23,1.01,.32,1) both;
+  border: 8px solid #ff9800;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
 }
 
 h1 {
-  font-size: 2.3rem;
-  color: #8d5524;
+  font-size: 2rem;
+  color: #ff9800;
   margin-bottom: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #222;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 img {
   margin: 1.5rem 0;
-  border-radius: 12px;
+  border-radius: 0;
   max-width: 100%;
   height: auto;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+  border: 4px solid #ff9800;
+  background: #fff;
 }
 
-/* Menu List */
 ul {
   list-style: none;
   padding: 0;
@@ -92,20 +99,50 @@ ul {
 }
 
 li {
-  background: #f8f1e4;
-  margin-bottom: 1.2rem;
+  background: #23272a;
+  margin-bottom: 2rem;
   padding: 1.2rem 1rem;
-  border-radius: 10px;
-  box-shadow: 0 1px 4px rgba(141,85,36,0.06);
-  font-size: 1.1rem;
+  border-radius: 0;
+  border: 4px solid #ff9800;
+  box-shadow: 2px 2px 0 #fff, 4px 4px 0 #ff9800;
+  font-size: 1rem;
   text-align: left;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 li:hover {
   transform: scale(1.03) translateY(-2px);
-  box-shadow: 0 4px 16px rgba(141,85,36,0.13);
-  background: #f3e3c3;
+  box-shadow: 4px 4px 0 #fff, 8px 8px 0 #ff9800;
+  background: #444;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 0;
+  border: 4px solid #fff;
+  background: #fff;
+}
+
+.menu-item strong {
+  font-size: 1.1rem;
+  color: #ff9800;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
+}
+
+.menu-item span {
+  display: block;
+  color: #fff;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 
 /* Contact Form */
@@ -119,53 +156,32 @@ form {
 
 input, textarea {
   padding: 0.7rem 1rem;
-  border: 1px solid #e0c097;
-  border-radius: 6px;
+  border: 4px solid #ff9800;
+  border-radius: 0;
   font-size: 1rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
   resize: vertical;
+  background: #fff;
+  color: #222;
 }
 
 button[type="submit"] {
-  background: #8d5524;
-  color: #fff;
-  border: none;
+  background: #ff9800;
+  color: #222;
+  border: 4px solid #222;
   padding: 0.7rem 1.5rem;
-  border-radius: 24px;
+  border-radius: 0;
   font-size: 1rem;
+  font-family: 'Press Start 2P', 'Segoe UI', Arial, sans-serif;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s, border 0.2s;
 }
 
 button[type="submit"]:hover {
-  background: #a4713a;
-}
-
-/* Footer */
-footer {
-  background: #fff;
-  color: #8d5524;
-  text-align: center;
-  padding: 1.5rem 0 1rem 0;
-  font-size: 1rem;
-  border-top: 1px solid #f3e3c3;
-  margin-top: 3rem;
-}
-
-footer .socials {
-  margin: 0.5rem 0;
-}
-
-footer .socials a {
-  display: inline-block;
-  margin: 0 0.5rem;
-  color: #8d5524;
-  font-size: 1.3rem;
-  transition: color 0.2s;
-}
-
-footer .socials a:hover {
-  color: #a4713a;
+  background: #222;
+  color: #ff9800;
+  border: 4px solid #ff9800;
 }
 
 /* Animations */
@@ -189,6 +205,16 @@ footer .socials a:hover {
   nav {
     gap: 1rem;
   }
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .menu-item img {
+    width: 90vw;
+    max-width: 300px;
+    height: auto;
+  }
 }
 
 @media (max-width: 600px) {
@@ -202,6 +228,6 @@ footer .socials a:hover {
     padding: 1.2rem 0.5rem;
   }
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
