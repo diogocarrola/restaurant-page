@@ -1,23 +1,19 @@
 function loadHome() {
   const content = document.getElementById('content');
-  // Clear previous content
   content.innerHTML = '';
 
-  // Create headline
   const headline = document.createElement('h1');
-  headline.textContent = 'Welcome to Gourmet Haven!';
+  headline.textContent = "Steve & Jack's Lava Roost";
 
-  // Create image
   const image = document.createElement('img');
-  image.src = 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80';
-  image.alt = 'Restaurant interior';
-  image.style.width = '300px';
+  image.src = 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Chicken_JE3_BE3.png'; // Minecraft chicken
+  image.alt = 'Minecraft Chicken';
+  image.style.width = '180px';
 
-  // Create description
   const desc = document.createElement('p');
-  desc.textContent = 'Experience the finest cuisine in a cozy atmosphere. Fresh ingredients, creative dishes, and friendly service await you!';
+  desc.textContent =
+    "Welcome to the hottest chicken joint in the Overworld! Steve & Jack's Lava Roost serves up legendary lava-fired chicken, blocky bites, and pixel-perfect fun. Whether you're a Redstone engineer or a wandering bard, our menu will power up your hunger bar!";
 
-  // Append elements
   content.appendChild(headline);
   content.appendChild(image);
   content.appendChild(desc);
