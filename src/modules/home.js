@@ -1,3 +1,5 @@
+import lavaChicken from '../assets/lava-chicken.jpg';
+
 function loadHome() {
   const content = document.getElementById('content');
   content.innerHTML = '';
@@ -6,9 +8,12 @@ function loadHome() {
   headline.textContent = "Steve & Jack's Lava Roost";
 
   const image = document.createElement('img');
-  image.src = 'https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Chicken_JE3_BE3.png'; // Minecraft chicken
-  image.alt = 'Minecraft Chicken';
-  image.style.width = '180px';
+  image.src = lavaChicken;
+  image.alt = 'Steve\'s Lava Chicken';
+  image.style.width = '80%';
+  image.style.maxWidth = '400px';
+  image.style.display = 'block';
+  image.style.margin = '2rem auto';
 
   const desc = document.createElement('p');
   desc.textContent =
